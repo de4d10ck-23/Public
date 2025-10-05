@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "VAG Round";
+  src: url("/public/fonts/VAGRoundedNext_normal_normal_600.woff2")
+    format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "VAG Round", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.body-start {
+  display: flex;
+  flex-grow: 1;
+  background-color: #ffbf00;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.background-red {
+  background-color: #da001c;
+}
+
+.header-side {
+  max-width: 100px;
+  min-width: 100px;
+}
+
+.logo-svg {
+  width: 100px;
+  height: auto;
+}
+
+.cart-png {
+  width: 25px;
+  height: 25px;
+}
+
+.cart-num {
+  margin-left: -5px;
+  font-size: 15px;
+}
+
+.jollibee-png {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  margin-top: -5em;
+}
+
+.text-start {
+  animation: zoom 2s ease-in-out infinite;
+  color: white;
+  font-weight: bold;
+  margin-top: -5em;
+  text-align: center;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 130px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2em;
+  border-radius: 0.2em;
+}
+
+.swiper-slide:active {
+  background-color: #fae3e6;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide p {
+  font-size: 13px;
+}
+
+.custom-input:focus {
+  border-color: #fc9ba7;
+  box-shadow: 0 0 0 0;
+}
+.card {
+  cursor: pointer;
+}
+
+.card:hover {
+  border-color: #da001c;
+}
+.card img {
+  width: 90px;
+  margin: 0 1em 0 0;
+}
+
+.card .add-btn {
+  color: #fff;
+  background-color: #da001c;
+  padding: 0px 15px;
+  border-radius: 50px;
+  border: 0;
+}
+
+@media (max-width: 299px) {
+  .card img {
+    width: 100%;
+    margin: 0 1em 0 0;
+  }
+  .product-card {
+    display: block !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .swiper-slide img {
+    width: 100px;
+  }
+}
